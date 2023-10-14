@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "aaa",
+			"type": "shell",
+			"command": "./run.sh",
+			"windows":{
+				"command": "./run.cmd"
+			}
+		},
+		{
+			"label": "build",
+			"type": "shell",
+			"windows":{
+				"command": "mvn compile"
+			}
+		}
+	]
+}

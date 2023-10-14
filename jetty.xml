@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure_9_0.dtd">
+<Configure class="org.eclipse.jetty.server.Server" id="Server">
+	<Ref id="DeploymentManager">
+		<Call name="addAppProvider">
+			<Arg><New class="org.eclipse.jetty.deploy.providers.WebAppProvider">
+					<Set name="monitoredDirName">C:\Users\aleiw\Desktop\ipynb\agent\agent\deploy</Set>
+					<Set name="scanInterval">1</Set>
+					<Set name="extractWars">true</Set>
+				</New></Arg>
+		</Call>
+	</Ref>
+</Configure>
